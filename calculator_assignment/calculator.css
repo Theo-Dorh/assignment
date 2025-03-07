@@ -36,6 +36,7 @@
 
 .calculator-icon{
     width: 45px;
+    filter: invert();
 }
 
 .input{
