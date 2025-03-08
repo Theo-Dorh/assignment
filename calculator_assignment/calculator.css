@@ -40,7 +40,7 @@
 }
 
 .input{
-    margin-top: 140px;
+    margin-top: 100px;
     margin-left: 4.5px;
     border-radius: 5px;
     width: 100%;
@@ -48,8 +48,21 @@
     text-align: right;
     background-color:  #1c1c1c;
     border: none;
+    outline: none;
     color: whitesmoke;
 }
+
+.input::-webkit-inner-spin-button, 
+.input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.input {
+    overflow: hidden;
+}
+
 
 .calculator-body {
     background-color: #1c1c1c;
