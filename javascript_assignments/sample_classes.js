@@ -3,11 +3,11 @@ class OpenBook {
     tail;
     middle;
 
-    open (head){
+    open (page){
         // steps
     }
 
-    close (tail) {
+    close (chapter) {
         //steps
     }
 }
@@ -17,11 +17,11 @@ class Cook {
     pan;
     bowl;
 
-    heat (pan) {
+    heat (food) {
         //steps
     }
 
-    fry (pan) {
+    fry (food) {
         //steps
     }
 }
@@ -32,15 +32,15 @@ class DrivingManual {
     brake;
     gear;
 
-    start (ignition) {
+    start () {
         //steps
     }
 
-    acelerate (accelerator) {
+    acelerate () {
         //steps
     }
 
-    reverse (gear) {
+    reverse () {
         //steps
     }
 }
@@ -50,11 +50,11 @@ class TankFiller {
     tankCover;
     tankNeck;
 
-    startFilling (tank) {
+    startFilling (fuel) {
         //steps
     }
 
-    shutOff (tankNeck) {
+    shutOff (engine) {
         //steps
     }
 }
@@ -64,11 +64,11 @@ class DishWasher {
     sink;
     runningWater;
 
-    openTap (runningWater) {
+    openTap (direction) {
         //steps
     }
 
-    washDishes (dishes) {
+    washDishes (dishType) {
         //steps
     }
 }
