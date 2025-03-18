@@ -46,10 +46,10 @@ console.log("banana".localeCompare("apple"));
 // Example:
 let text = "Hello, world!";
 console.log(text.match(/world/)); 
-Result - ["world"]
+// Result - [ 'world', index: 7, input: 'Hello, world!', groups: undefined ]
 
 console.log(text.match(/JavaScript/)); 
-Result - null
+// Result - null
 
 // 3. matchAll()
 // Description:
@@ -65,8 +65,8 @@ Result - null
 // - An iterator of RegExpExecArray objects.
 
 // Example:
-let text = "test test test";
-let matches = text.matchAll(/test/g);
+let sentence = "test test test";
+let matches = sentence.matchAll(/test/g);
 for (let match of matches) {
     console.log(match[0]);
 }
@@ -108,6 +108,7 @@ console.log("Hello".padEnd(10, "!"));
 // Return Value:
 // - A new padded string.
 
-Eg. console.log("42".padStart(5, "0"));
+// Example
+console.log("42".padStart(5, "0"));
 
-Result - "00042"
+// Result - "00042"
