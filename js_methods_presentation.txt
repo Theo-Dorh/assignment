@@ -1,0 +1,113 @@
+JavaScript Methods
+
+1. localeCompare()
+Description:
+Compares two strings based on the current or specified locale (language and region settings used to format strings, numbers, dates etc) and returns a number indicating their order.
+
+Syntax:
+string.localeCompare(that, locales?, options?)
+
+Parameters:
+- that (string) – The string to compare with.
+- locales (optional, string | string[]) – Defines the locale(s) for comparison.
+- options (optional, object) – Customizes comparison behavior (e.g., case sensitivity).
+
+Return Value:
+A number:
+  - -1 if string comes before that
+  - 0 if string is equal to that
+  - 1 if string comes after that
+
+Example:
+console.log("apple".localeCompare("banana"));
+Result = -1 (apple comes before banana)
+
+console.log("apple".localeCompare("apple"));
+Result = 0 (strings are equal)
+
+console.log("banana".localeCompare("apple"));
+Result = 1 (banana comes after apple)
+
+
+2. match()
+Description:
+Searches a string for a match against a regular expression and returns an array of matches or null if no match is found.
+
+Syntax:
+string.match(regexp)
+
+Parameters:
+- regexp (string | RegExp) – The pattern to search for.
+
+Return Value:
+- RegExpMatchArray if a match is found.
+- null if no match is found.
+
+Example:
+let text = "Hello, world!";
+console.log(text.match(/world/)); 
+Result - ["world"]
+
+console.log(text.match(/JavaScript/)); 
+Result - null
+
+3. matchAll()
+Description:
+Finds all matches of a regular expression in a string and returns an iterator with details for each match.
+
+Syntax:
+string.matchAll(regexp)
+
+Parameters:
+- regexp (RegExp) – The regular expression to match. Must have the g flag.
+
+Return Value:
+- An iterator of RegExpExecArray objects.
+
+Example:
+let text = "test test test";
+let matches = text.matchAll(/test/g);
+for (let match of matches) {
+    console.log(match[0]);
+}
+Result - Prints "test" three times
+
+
+4. padEnd()
+Description:
+Pads a string from the right to ensure it reaches a specific length.
+
+Syntax:
+string.padEnd(maxLength, fillString)
+
+Parameters:
+- maxLength (number) – The total length of the final string.
+- fillString (optional, string) – The string used for padding (default is a space " ").
+
+Return Value:
+- A new padded string.
+
+Example:
+console.log("Hello".padEnd(10, "!"));
+
+Result - "Hello!!!!!"
+
+
+5. padStart()
+Description:
+Pads a string from the left to ensure it reaches a specific length.
+
+Syntax:
+string.padStart(maxLength, fillString)
+
+
+Parameters:
+- maxLength (number) – The total length of the final string.
+- fillString (optional, string) – The string used for padding (default is a space " ").
+
+Return Value:
+- A new padded string.
+
+Eg. console.log("42".padStart(5, "0"));
+
+Result - "00042"
